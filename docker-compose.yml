@@ -18,6 +18,8 @@ services:
       - dispatcher:dispatcher
     labels:
       - "logging=true"
+    environment:
+      - 'DEFAULT_ACCESS_CONTROL_ALLOW_ORIGIN_HEADER=*'
     restart: always
     logging: *default-logging
   dispatcher:
@@ -51,3 +53,11 @@ services:
       - "logging=true"
     restart: always
     logging: *default-logging
+  snippets:
+   image: nginx:1.15.2
+   volumes:
+     - ./config/snippets/config:/etc/nginx/conf.d
+     - ./config/snippets/data:/data
+   restart: always
+   labels:
+     - "logging=true"
