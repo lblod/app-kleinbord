@@ -10,6 +10,8 @@ x-logging:
 services:
   kleinbord:
     image: lblod/frontend-kleinbord:0.0.1
+    environment:
+      STATIC_FOLDERS_REGEX: '^/(assets|font|snippets)/'
     links:
       - identifier:backend
   identifier:
