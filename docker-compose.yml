@@ -21,7 +21,8 @@ services:
     labels:
       - "logging=true"
     environment:
-      - 'DEFAULT_ACCESS_CONTROL_ALLOW_ORIGIN_HEADER=*'
+      DEFAULT_MU_AUTH_ALLOWED_GROUPS_HEADER: "[{\"variables\":[],\"name\":\"public\"}]"
+      DEFAULT_ACCESS_CONTROL_ALLOW_ORIGIN_HEADER: '*'
     restart: always
     logging: *default-logging
   dispatcher:
@@ -35,7 +36,7 @@ services:
     restart: always
     logging: *default-logging
   database:
-    image: tenforce/virtuoso:1.3.2-virtuoso7.2.2
+    image: tenforce/virtuoso:1.3.2-virtuoso7.2.5.1
     environment:
       SPARQL_UPDATE: "true"
       DEFAULT_GRAPH: "http://mu.semte.ch/application"
@@ -55,6 +56,18 @@ services:
       - "logging=true"
     restart: always
     logging: *default-logging
+  migrations:
+    image: semtech/mu-migrations-service:0.5.1
+    links:
+      - database:database
+    volumes:
+      - ./config/migrations:/data/migrations
+    environment:
+      MU_SPARQL_TIMEOUT: "600"
+    restart: always
+    logging: *default-logging
+    labels:
+      - "logging=true"
   snippets:
    image: nginx:1.15.2
    volumes:
