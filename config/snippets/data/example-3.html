@@ -1,12 +1,12 @@
-<div prefix="mobiliteit: https://data.vlaanderen.be/ns/mobiliteit# infrastructuur: https://data.vlaanderen.be/ns/openbaardomein/infrastructuur# besluit: https://data.vlaanderen.be/ns/besluit# geosparql: http://www.opengis.net/ont/geosparql# locn: http://www.w3.org/ns/locn# xsd:http://www.w3.org/2001/XMLSchema# foaf: http://xmlns.com/foaf/0.1/ prov:http://www.w3.org/ns/prov# eli: http://data.europa.eu/eli/ontology# ">
-  <div property="prov:generated" resource="http://data.lblod.info/besluiten/f3509d6d-de5a-4c55-876e-de5eeb98bdf9" typeof="besluit:Besluit besluit:AanvullendReglement">
+<div prefix="mobiliteit: https://data.vlaanderen.be/ns/mobiliteit# infrastructuur: https://data.vlaanderen.be/ns/openbaardomein/infrastructuur# besluit: http://data.vlaanderen.be/ns/besluit# geosparql: http://www.opengis.net/ont/geosparql# locn: http://www.w3.org/ns/locn# xsd:http://www.w3.org/2001/XMLSchema# foaf: http://xmlns.com/foaf/0.1/ prov:http://www.w3.org/ns/prov# eli: http://data.europa.eu/eli/ontology# ext: http://mu.semte.ch/vocabularies/ext/">
+  <div property="prov:generated" resource="http://data.lblod.info/besluiten/27caf2c3-3254-440e-a669-396b986b66ae" typeof="besluit:Besluit besluit:AanvullendReglement">
     <div>
-      <h5 class="h4 u-spacer" property="eli:title">Mijn derde aanvullend reglement</h5>
+      <h5 class="h4 u-spacer" property="eli:title">Mijn tweede aanvullend reglement</h5>
       <meta property="eli:language" resource="http://publications.europa.eu/resource/authority/language/NLD" />
     </div>
 
     <div>
-      <div property="eli:description">Herhaling snelheid 50</div>
+      <div property="eli:description">Nieuwe zone 30</div>
     </div>
 
     <p class="u-spacer--small">De raad,</p>
@@ -28,49 +28,70 @@
     <div>
       <h6 class="h5">Besluit</h6>
       <div prefix="mobiliteit: https://data.vlaanderen.be/ns/mobiliteit# infrastructuur: https://data.vlaanderen.be/ns/openbaardomein/infrastructuur# besluit: https://data.vlaanderen.be/ns/besluit# geosparql: http://www.opengis.net/ont/geosparql# locn: http://www.w3.org/ns/locn# xsd:http://www.w3.org/2001/XMLSchema# foaf: http://xmlns.com/foaf/0.1/">
-
-        <!-- Voorbeeld 3: Intekening van bord snelheid 50 met onderbord 'Herhaling'-->
-        <img src="http://maps.mow.vlaanderen.be/9a612330-f197-4ac4-b1d8-9c4dc297a06a">
-        <div resource="http://data.mow.vlaanderen.be/id/opstelling/d1f9098c-5d5e-41fd-88cd-244886c3e930" typeof="mobiliteit:Opstelling">
-          <div property="locn:geometry" resource="http://data.mow.vlaanderen.be/id/geometrie/3a48aa5d-6e05-4c65-8e00-c28bcec84657" typeof="locn:Geometry">
-            <span property="geosparql:asWKT" datatype="geosparql:wktLiteral" content="Point (-13.4 23.0)"></span>
-          </div>
-          <div property="mobiliteit:grafischeWeergave" resource="http://maps.mow.vlaanderen.be/9a612330-f197-4ac4-b1d8-9c4dc297a06a" typeof="foaf:Image"></div>
-          <div property="mobiliteit:Opstelling.operationeleStatus" resource="http://data.vlaanderen.be/id/opstelling-operationele-status/gepland"></div>
-          <div property="mobiliteit:omvatVerkeersbord" resource="http://data.mow.vlaanderen.be/id/verkeersbord/b1f03f33-0e68-457f-9760-f7275e0b6b18" typeof="infrastructuur:Verkeersbord">
-            <div property="mobiliteit:Verkeersbord.operationeleStatus" resource="http://data.vlaanderen.be/id/verkeersbord-operationele-status/gepland"></div>
-            <div property="mobiliteit:realiseert" resource="http://data.lblod.info/id/verkeersteken/cea5433b-aa89-43ae-b44d-588e4052ccba" typeof="mobiliteit:Verkeersbord-Verkeersteken mobiliteit:Verkeersteken">
-              <div property="mobiliteit:heeftVerkeersbordconcept" resource="http://data.vlaanderen.be/id/concept/Verkeersbordconcept/90f9cd6c4f71e155cb1db7622e99a20b8bb0a029a16fe667354b3e656b13d05b" typeof="mobiliteit:Verkeersbordconcept">
+        <div resource="http://data.lblod.info/artikels/2e94598c-3772-4965-b797-7a225be00927" typeof="besluit:Artikel">
+          <!-- Voorbeeld 2: Intekening van een begin en einde zone 30 -->
+          <img src="https://dev.kleinbord.lblod.info/snippets/images/example-9-kaart-1.png">
+          <div resource="http://data.mow.vlaanderen.be/id/opstellingen/b421ed5e-c0e6-4de4-9688-26f2fc4839af" typeof="mobiliteit:Opstelling">
+            <div property="locn:geometry" resource="http://data.mow.vlaanderen.be/id/geometries/c2de8121-284b-4243-9bff-3d3bf4d54279" typeof="locn:Geometry">
+              <span property="geosparql:asWKT" datatype="geosparql:wktLiteral" content="Point (51.226835 4.416502)"></span>
+            </div>
+            <div property="mobiliteit:grafischeWeergave" resource="http://maps.mow.vlaanderen.be/b421ed5e-c0e6-4de4-9688-26f2fc4839af" typeof="foaf:Image"></div>
+            <div property="mobiliteit:Opstelling.operationeleStatus" resource="http://data.vlaanderen.be/id/opstelling-operationele-status/gepland">
+            </div>
+            <div property="mobiliteit:omvatVerkeersbord" resource="http://data.mow.vlaanderen.be/id/verkeersborden/94d4a016-ed37-4f54-91d6-b4966f74ebfa" typeof="infrastructuur:Verkeersbord">
+              <div property="mobiliteit:Verkeersbord.operationeleStatus" resource="http://data.vlaanderen.be/id/verkeersbord-operationele-status/gepland">
               </div>
-              <div property="mobiliteit:heeftOnderbord" resource="http://data.lblod.info/id/verkeersteken/4f235baa-6ad7-45b8-b2a4-67d78251521c" typeof="mobiliteit:Verkeersbord-Verkeersteken mobiliteit:Verkeersteken">
-                <!-- het onderbord wordt hierna verder beschreven als onderdeel van de Opstelling -->
+              <div property="mobiliteit:realiseert" resource="http://data.lblod.info/id/verkeerstekens/7f6e6111-81c6-4bfb-9118-bb51ec1fbf26" typeof="mobiliteit:Verkeersbord-Verkeersteken mobiliteit:Verkeersteken">
+                <div property="mobiliteit:heeftVerkeersbordconcept" resource="http://data.vlaanderen.be/id/concept/Verkeersbordconcept/ecedfa0ac528d4ba21050a5ff32e8f320fb7f1da82c799c29b1fa85fcf0a9024" typeof="mobiliteit:Verkeersbordconcept">
+                </div>
+                <div property="mobiliteit:isBeginZone" content="true" datatype="xsd:boolean">
+                </div>
               </div>
             </div>
           </div>
-          <div property="mobiliteit:omvatVerkeersbord" resource="http://data.mow.vlaanderen.be/id/verkeersbord/c0c9f928-743d-47c6-9936-5c2aae636a0e" typeof="infrastructuur:Verkeersbord">
-            <div property="mobiliteit:Verkeersbord.operationeleStatus" resource="http://data.vlaanderen.be/id/verkeersbord-operationele-status/gepland"></div>
-            <!-- het onderbord waarnaar hierboven verwezen wordt -->
-            <div property="mobiliteit:realiseert" resource="http://data.lblod.info/id/verkeersteken/4f235baa-6ad7-45b8-b2a4-67d78251521c" typeof="mobiliteit:Verkeersbord-Verkeersteken mobiliteit:Verkeersteken">
-              <div property="mobiliteit:heeftVerkeersbordconcept" resource="http://data.vlaanderen.be/id/concept/Verkeersbordconcept/467fd28bb6c20b60929465203bbfd0d9f76a94d43d9f41574871a594ef6b3846" typeof="mobiliteit:Verkeersbordconcept">
-                <!-- URI komt uit codelijst Verkeersbordconcepten die aangeleverd zal worden -->
+
+          <div resource="http://data.mow.vlaanderen.be/id/opstellingen/e31a7f0a-942d-4c06-85a8-4b89a845832f" typeof="mobiliteit:Opstelling">
+            <div property="locn:geometry" resource="http://data.mow.vlaanderen.be/id/geometries/bfa5f59d-99cb-4467-998c-fd19bc241c0a" typeof="locn:Geometry">
+              <span property="geosparql:asWKT" datatype="geosparql:wktLiteral" content="Point (51.227408 4.418295)">
+              </span>
+            </div>
+            <div property="mobiliteit:grafischeWeergave" resource="http://maps.mow.vlaanderen.be/b421ed5e-c0e6-4de4-9688-26f2fc4839af" typeof="foaf:Image">
+            </div>
+            <div property="mobiliteit:Opstelling.operationeleStatus" resource="http://data.vlaanderen.be/id/opstelling-operationele-status/gepland">
+            </div>
+            <div property="mobiliteit:omvatVerkeersbord" resource="http://data.mow.vlaanderen.be/id/verkeersborden/6ef6fd81-3dc8-4ec6-a47d-2756537d2524" typeof="infrastructuur:Verkeersbord">
+              <div property="mobiliteit:Verkeersbord.operationeleStatus" resource="http://data.vlaanderen.be/id/verkeersbord-operationele-status/gepland">
+              </div>
+              <div property="mobiliteit:realiseert" resource="http://data.lblod.info/id/verkeerstekens/14b4bd75-a72c-4fd7-99bf-db3c5d094ae9" typeof="mobiliteit:Verkeersbord-Verkeersteken mobiliteit:Verkeersteken">
+                <div property="mobiliteit:heeftVerkeersbordconcept" resource="http://data.vlaanderen.be/id/concept/Verkeersbordconcept/2721df3072ab4e96f50b345524806082f37252e7a1a802b14d640c3cfd7a1d49" typeof="mobiliteit:Verkeersbordconcept">
+                </div>
+                <div property="mobiliteit:isEindeZone" content="true" datatype="xsd:boolean"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div resource="http://data.mow.vlaanderen.be/id/opstellingen/54gh7f0a-942d-4c06-85a8-4b89a845hm9" typeof="mobiliteit:Opstelling">
+          <div property="locn:geometry" resource="http://data.mow.vlaanderen.be/id/geometries/5l83f59d-99cb-4467-998c-fd19bc24wa31" typeof="locn:Geometry">
+            <span property="geosparql:asWKT" datatype="geosparql:wktLiteral" content="Point (51.327408 4.518295)">
+            </span>
+          </div>
+          <div property="mobiliteit:grafischeWeergave" resource="http://maps.mow.vlaanderen.be/3fk0d5e-c0e6-4de4-9688-26f2fc4891s" typeof="foaf:Image">
+          </div>
+          <div property="mobiliteit:Opstelling.operationeleStatus" resource="http://data.vlaanderen.be/id/opstelling-operationele-status/gepland">
+          </div>
+          <div property="mobiliteit:omvatVerkeersbord" resource="http://data.mow.vlaanderen.be/id/verkeersborden/fw18fd81-3dc8-4ec6-a47d-2756537dmlg4" typeof="infrastructuur:Verkeersbord">
+            <div property="mobiliteit:Verkeersbord.operationeleStatus" resource="http://data.vlaanderen.be/id/verkeersbord-operationele-status/gepland">
+            </div>
+            <div property="mobiliteit:realiseert" resource="http://data.lblod.info/id/verkeerstekens/bg34bd75-a72c-4fd7-99bf-db3c5d09tf2a" typeof="mobiliteit:Verkeersbord-Verkeersteken mobiliteit:Verkeersteken">
+              <div property="mobiliteit:heeftVerkeersbordconcept" resource="http://data.vlaanderen.be/id/concept/Verkeersbordconcept/6cebe8cd9a145b9791d607b6b66fee19a080ab8efecdca98bef9dde1d7a3c228" typeof="mobiliteit:Verkeersbordconcept">
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <ul class="article-list u-spacer--small" property="prov:value">
-        <li property="eli:has_part" resource="http://data.lblod.info/artikels/56b65dd6-7a00-43b2-b8c4-a18ffd7237f6" typeof="besluit:Artikel">
-          <span class="annotation article-number" property="eli:number">Artikel 1.</span>
-          <meta property="eli:language" resource="http://publications.europa.eu/resource/authority/language/NLD" />
-          <span class="annotation article-content" property="prov:value">Bord snelheid 50 </span>
-        </li>
-        <li property="eli:has_part" resource="http://data.lblod.info/artikels/2b9e69d4-18ca-46e4-89ee-048b7c4fb8fe" typeof="besluit:Artikel">
-          <span class="annotation article-number" property="eli:number">Artikel 2.</span>
-          <meta property="eli:language" resource="http://publications.europa.eu/resource/authority/language/NLD" />
-          <span class="annotation article-content" property="prov:value">Onderbord herhaling </span>
-        </li>
-      </ul>
+      </div>
     </div>
   </div>
 </div>
