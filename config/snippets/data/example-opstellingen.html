@@ -1,0 +1,37 @@
+<!-- voorbeeld minimaal opstelling -->
+<div prefix="dct: 	http://purl.org/dc/terms/ infrastructuur: https://data.vlaanderen.be/ns/openbaardomein/infrastructuur# skos: http://www.w3.org/2004/02/skos/core# mobiliteit: http://data.vlaanderen.be/ns/mobiliteit# locn: 	http://www.w3.org/ns/locn# geosparql: 	http://www.opengis.net/ont/geosparql# ext: http://mu.semte.ch/vocabularies/ext/"
+     property="ext:verkeersbordenVlaanderenSnippet"
+>
+  <!-- Intekening van een begin en einde zone 30 -->
+  <div resource="http://data.mow.vlaanderen.be/id/opstellingen/e31a7f0a-942d-4c06-85a8-4b89a845832f" typeof="mobiliteit:Opstelling">
+    <div property="locn:geometry" resource="http://data.mow.vlaanderen.be/id/geometries/bfa5f59d-99cb-4467-998c-fd19bc241c0a" typeof="locn:Geometry">
+      <span property="geosparql:asWKT" datatype="geosparql:wktLiteral" content="Point (51.227408 4.418295)">
+      </span>
+      <span property="dct:identifier">jullie interne opstelling identifier kan hier</span>
+    </div>
+    <div property="mobiliteit:omvatVerkeersbord" resource="http://data.mow.vlaanderen.be/id/verkeersborden/6ef6fd81-3dc8-4ec6-a47d-2756537d2524" typeof="infrastructuur:Verkeersbord">
+      <div property="mobiliteit:realiseert" resource="http://data.lblod.info/id/verkeerstekens/14b4bd75-a72c-4fd7-99bf-db3c5d094ae9" typeof="mobiliteit:Verkeersbord-Verkeersteken mobiliteit:Verkeersteken">
+        <div property="mobiliteit:heeftVerkeersbordconcept" resource="http://data.vlaanderen.be/id/concept/Verkeersbordconcept/2721df3072ab4e96f50b345524806082f37252e7a1a802b14d640c3cfd7a1d49" typeof="mobiliteit:Verkeersbordconcept">
+          <span property="skos:prefLabel">F4b</span>
+        </div>
+        <div property="mobiliteit:isEindeZone" content="true" datatype="xsd:boolean"></div>
+      </div>
+    </div>
+  </div>
+
+  <div resource="http://data.mow.vlaanderen.be/id/opstellingen/54gh7f0a-942d-4c06-85a8-4b89a845hm9" typeof="mobiliteit:Opstelling">
+    <div property="locn:geometry" resource="http://data.mow.vlaanderen.be/id/geometries/5l83f59d-99cb-4467-998c-fd19bc24wa31" typeof="locn:Geometry">
+      <span property="geosparql:asWKT" datatype="geosparql:wktLiteral" content="Point (51.327408 4.518295)">
+      </span>
+    </div>
+    <span property="dct:identifier">jullie interne opstelling identifier kan hier</span>
+    <div property="mobiliteit:omvatVerkeersbord" resource="http://data.mow.vlaanderen.be/id/verkeersborden/fw18fd81-3dc8-4ec6-a47d-2756537dmlg4" typeof="infrastructuur:Verkeersbord">
+      <div property="mobiliteit:realiseert" resource="http://data.lblod.info/id/verkeerstekens/bg34bd75-a72c-4fd7-99bf-db3c5d09tf2a" typeof="mobiliteit:Verkeersbord-Verkeersteken mobiliteit:Verkeersteken">
+        <div property="mobiliteit:heeftVerkeersbordconcept" resource="http://data.vlaanderen.be/id/concept/Verkeersbordconcept/ecedfa0ac528d4ba21050a5ff32e8f320fb7f1da82c799c29b1fa85fcf0a9024" typeof="mobiliteit:Verkeersbordconcept">
+          <span property="skos:prefLabel">F4a</span>
+        </div>
+        <span property="mobiliteit:isBeginZone" content="true" datatype="xsd:boolean"></span>
+      </div>
+    </div>
+  </div>
+</div>
